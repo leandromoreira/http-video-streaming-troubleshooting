@@ -46,7 +46,7 @@ Using the **same audio frame rate isn't enough**, we noticed some devices are re
 # [PTS](https://en.wikipedia.org/wiki/Presentation_timestamp), GOP and segment size must be orchestrated
 > Time, it needs time to win back your love again
 
-Sometimes your playback will present strange behaviors like going back in time, freezing and then playing again and etc. And timing might play a big role here, HLS ,for instance, expects your [GOP's](https://en.wikipedia.org/wiki/Group_of_pictures) to be a multiplier of your segment size (and don't forget to [disable scene detection](https://en.wikibooks.org/wiki/MeGUI/x264_Settings#scenecut)). Don't hurt to remember that the PTS of your renditions should be in sync.
+Sometimes your playback will present strange behaviors like going back in time, freezing and then playing again and etc. And timing might play a big role here, HLS ,for instance, expects your [GOP's](https://en.wikipedia.org/wiki/Group_of_pictures) to be a multiplier of your segment size (and don't forget to [disable scene detection](https://en.wikibooks.org/wiki/MeGUI/x264_Settings#scenecut)). It doesn't hurt to remember that the PTS and the program date time of your renditions should be in sync.
 
 # EXT-X-MEDIA-SEQUENCE used to sync renditions
 > If it's not on the standard, I'll do what I want!
