@@ -1,6 +1,6 @@
 # A troubleshooting guide for video streaming issues
 
-This is a collection of issues, how to check them and, when possible, how to solve them. If you work with video streaming (either live or VOD) for at least two years, [you know what it's like!](https://haasn.xyz/posts/2016-12-25-falsehoods-programmers-believe-about-%5Bvideo-stuff%5D.html) **It's a shame we can't just say it works on [VLC](https://github.com/videolan/vlc) and move on!**
+This is a collection of issues related to video streaming, how to check them and, when possible, how to solve them. If you work with video streaming (either live or VOD) for at least two years, [you know what it's like!](https://haasn.xyz/posts/2016-12-25-falsehoods-programmers-believe-about-%5Bvideo-stuff%5D.html) **It's a shame we can't just say it works on [VLC](https://github.com/videolan/vlc) and move on!**
 
 The many problems arise, mostly, from our silly wish to delivery video throughout all of the devices: 
 * many browsers (firefox, chrome, edge, ios safari, android browser ...)
