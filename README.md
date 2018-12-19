@@ -33,7 +33,7 @@ Some TVs also don't respect or work with [CORS](https://en.wikipedia.org/wiki/Cr
 
 Well, some TVs doesn't like to mix different [frame rates](https://en.wikipedia.org/wiki/Frame_rate). For instance, we had our first rendition using 15 FPS while our bigger renditions were using 30 FPS, nice and tide for almost all of the devices, except some TVs, they play the content but dropping a lot of frames :( yeap, **some TVs won't play great with different frame rates**, mostly when they're switching among the renditions.
 
-# Do not mix audio frame rate
+# Do not mix audio frame (sample) rate
 > Lip sync battle!
 
 If your **audio framerate is not consistent** in all your renditions, some devices might **play glitches** randomly or even worst they won't play it at all, so **stick with a single audio frame rate.**
