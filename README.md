@@ -7,7 +7,9 @@ The many problems arise, mostly, from our silly wish to delivery video throughou
 * many OSs (linux, macos, windows, ios, android ...)
 * many TVs brands (samsung, LG, sony, TCL ...)
 * many TVs brands models or release year (2012, 2013, 2016 ...)
-* and the multiplication of these factors: my **video (delivered over Z protocol)** doesn't play well in an **X mobile at a Y version** using the **K browser at version X**
+* many possible device specific features available or not (4k, HDR, HEVC...)
+* many yet DRM system ([FPS - FairPlay Streaming, PR - PlayReady, WV - Widevine](https://github.com/leandromoreira/digital_video_introduction#how))
+* and the multiplication of these factors: Does the **4K (DRM protected)** version of a **video (delivered over HLS "delivery" protocol)** plays well in an **X mobile at a Y version** using the **K browser at version X**?
 
 We'll focus mainly on [HTTP adaptive bitrate streaming](https://en.wikipedia.org/wiki/Adaptive_bitrate_streaming) protocols and the mostly used [CODECs](https://github.com/leandromoreira/digital_video_introduction#how-does-a-video-codec-work).
 
