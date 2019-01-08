@@ -59,6 +59,11 @@ The HLS has a tag called [EXT-X-MEDIA-SEQUENCE](https://tools.ietf.org/html/draf
    
 It turns out that some devices and players use this tag to sync all the renditions :( even though the HLS standard in [March 2013](https://tools.ietf.org/html/draft-pantos-http-live-streaming-09#section-3.4.3) (almost 6 years ago) made it clear it MUST NOT BE USED this way.
 
+# Some devices won't play the "high" resolutions renditions
+> Your expensive smart TV can't play HD (h264) videos.
+
+Some TVs will present flickering, timing issues and others while playing a normal manifest (i.e. HLS, H264 up until 720p), the solution is just to cut out the higher rendintions. Since you found what devices can't do well with high resolution you just need **to offer a limited, resolutions lower than X, manifest for that group of devices**.
+
 # General steps to verify MPEG-DASH or HLS issues
 
 * check if [cors is enabled](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS) at your servers
