@@ -7,7 +7,7 @@ The many problems arise, mostly, from our silly wish to delivery video throughou
 * many OSs (linux, macos, windows, ios, android ...)
 * many TVs brands (samsung, LG, sony, TCL ...)
 * many TVs brands models or release year (2012, 2013, 2016 ...)
-* many possible device specific features available or not (4k, HDR, HEVC...)
+* many possible device-specific features available or not (4k, HDR, HEVC...)
 * many yet DRM system ([FPS - FairPlay Streaming, PR - PlayReady, WV - Widevine](https://github.com/leandromoreira/digital_video_introduction#how))
 * and the multiplication of these factors: Does the **4K (DRM protected)** version of a **video (delivered over HLS "delivery" protocol)** plays well in an **X mobile at a Y version** using the **K browser at version X**?
 
@@ -31,11 +31,11 @@ Some old TVs doesn't perform well under [HTTPS](https://en.wikipedia.org/wiki/HT
 Some TVs also don't respect or work with [CORS](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing)!
 
 # Do not mix video frame rate
-> Mixed frame rate isn't a problem in 2018? is it?
+> The mixed frame rate isn't a problem in 2018? is it?
 
 Well, some TVs doesn't like to mix different [frame rates](https://en.wikipedia.org/wiki/Frame_rate). For instance, we had our first rendition using 15 FPS while our bigger renditions were using 30 FPS, nice and tide for almost all of the devices, except some TVs, they play the content but dropping a lot of frames :( yeap, **some TVs won't play great with different frame rates**, mostly when they're switching among the renditions.
 
-# Do not mix audio frame (sample) rate
+# Do not mix the audio frame (sample) rate
 > Lip sync battle!
 
 If your **audio framerate is not consistent** in all your renditions, some devices might **play glitches** randomly or even worst they won't play it at all, so **stick with a single audio frame rate.**
@@ -62,7 +62,7 @@ It turns out that some devices and players use this tag to sync all the renditio
 # Some devices won't play the "high" resolutions renditions
 > Your expensive smart TV can't play HD (h264) videos.
 
-Some TVs will present flickering, timing issues and others while playing a normal manifest (i.e. HLS, H264 up until 720p), the solution is just to cut out the higher rendintions. Since you found what devices can't do well with high resolution you just need **to offer a limited, resolutions lower than X, manifest for that group of devices**.
+Some TVs will present flickering, timing issues and others while playing a normal manifest (i.e. HLS, H264 up until 720p), the solution is just to cut out the higher renditions. Since you found what devices can't do well with high resolution you just need **to offer a limited, resolutions lower than X, manifest for that group of devices**.
 
 # General steps to verify MPEG-DASH or HLS issues
 
