@@ -40,10 +40,10 @@ Well, some TVs doesn't like to mix different [frame rates](https://en.wikipedia.
 
 If your **audio framerate is not consistent** in all your renditions, some devices might **play glitches** randomly or even worst they won't play it at all, so **stick with a single audio frame rate.**
 
-# Stick to 44khz?
+# Stick to 44.1khz?
 > Lip sync battle 2 - the return!
 
-Using the **same audio frame rate isn't enough**, we noticed some devices are really rooted in their causes, they **play better at 44khz.** I really don't know why.
+Using the **same audio frame rate isn't enough**, we noticed some devices are really rooted in their causes, they **play better at 44.1khz.** I really don't know why.
 
 # [PTS](https://en.wikipedia.org/wiki/Presentation_timestamp), GOP and segment size must be orchestrated
 > Time, it needs time to win back your love again
