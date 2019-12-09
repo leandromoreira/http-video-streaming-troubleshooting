@@ -50,6 +50,20 @@ Using the **same audio frame rate isn't enough**, we noticed some devices are re
 
 Sometimes your playback will present strange behaviors like going back in time, freezing and then playing again and etc. And timing might play a big role here, HLS ,for instance, expects your [GOP's](https://en.wikipedia.org/wiki/Group_of_pictures) to be a multiplier of your segment size (and don't forget to [disable scene detection](https://en.wikibooks.org/wiki/MeGUI/x264_Settings#scenecut)). It doesn't hurt to remember that the PTS and the program date time of your renditions should be in sync.
 
+
+# Encrypted HLS :: some TVs won't mount the correct URL to download the key
+> Your expensive smart TV can't mount the right URL using a relative path.
+
+Let's say your master manifest<sup>1</sup> points to variant of 480p<sup>2</sup> which contains the `mpegts` and the `keys` in the same level as the variant but the TV will try to download the `key` as if it was located on the master manifest.
+
+1. http://example.com/p/s/x/stream.m3u8
+2. http://example.com/p/s/x/stream/stream-480p.m3u8
+3. http://example.com/p/s/x/stream/stream-480p/key01.ts
+4. http://example.com/p/s/x/stream/stream-480p/01.ts
+
+Your TV might try to download the following key `http://example.com/p/s/x/stream/key01.ts`. One thing you can do is to put the whole URL into the variant manifest instead of just the relative path.
+
+
 # EXT-X-MEDIA-SEQUENCE used to sync renditions
 > If it's not on the standard, I'll do what I want!
 
