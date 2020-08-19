@@ -25,6 +25,16 @@ Nope, some TVs doesn't know or care about what [cookies](https://developer.mozil
 
 Some old TVs doesn't perform well under [HTTPS](https://en.wikipedia.org/wiki/HTTPS), there will be many dropped frames or even unplayable videos. Sometimes what **one needs to do is to be insecure!** PS: you might need to be insecure even for images.
 
+# The 1994 HTTP Chunked transfer encoding doesn't work in all TVs
+> 9\r\n
+> it doesnt\r\n
+> 5\r\n
+> work\r\n
+> 0\r\n
+> \r\n
+
+Some CTV's native player can't handle [chunked transfer encoding](https://en.wikipedia.org/wiki/Chunked_transfer_encoding), therefore you must state your full lenght ahead of time.
+
 # CORS is not followed in all devices
 > Some TVs doesn't respect the police
 
